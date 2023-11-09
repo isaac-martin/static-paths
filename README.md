@@ -8,5 +8,5 @@ Subsequently this also means that the ASCII encoding for `/` which is `%2F` is t
 
 This is somewhat called out in the docs https://nextjs.org/docs/pages/building-your-application/routing/dynamic-routes#optional-catch-all-segments however i think that when next encounters a catch all segment that includes a `/` inside it - error on the build, or apply a `sement.split('/')` and spread the result of this into the array of segments. 
 
-subsequently the `/` and `%2F` should be treated the same. 
+subsequently the `/` and `%2F` should be treated the same - as it is currently you could in theory generate two seperate pages for these when they should error / be the same
 
